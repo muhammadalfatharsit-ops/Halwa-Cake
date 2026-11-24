@@ -1,0 +1,591 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>403 Forbidden</title>
+</head>
+<body>
+
+<p>Directory access is forbidden.</p>
+
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Halwa Cake - An Exotic Sweetness to Remember</title>
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Plus+Jakarta+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+    
+    <style>
+        :root {
+            --emerald: #0F382C;
+            --emerald-light: #185241;
+            --brown: #8B5A2B;
+            --brown-dark: #5C3A17;
+            --cream-bg: #FAF6F0;
+            --cream-card: #F3ECE1;
+            --gold-accent: #C5A059;
+            --text-dark: #2C221E;
+        }
+
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            background-color: var(--cream-bg);
+            color: var(--text-dark);
+            scroll-behavior: smooth;
+        }
+
+        h1, h2, h3, h4, h5, .font-serif {
+            font-family: 'Cinzel', serif;
+        }
+
+        /* Navbar Styling */
+        .navbar-custom {
+            background-color: var(--emerald);
+            padding: 15px 0;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+        }
+        .navbar-custom .nav-link {
+            color: #FAF6F0 !important;
+            font-size: 0.85rem;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            padding: 8px 14px !important;
+            transition: all 0.3s;
+        }
+        .navbar-custom .nav-link:hover, 
+        .navbar-custom .nav-link.active {
+            color: var(--gold-accent) !important;
+        }
+        .brand-logo {
+            font-family: 'Cinzel', serif;
+            color: #FAF6F0 !important;
+            font-weight: 700;
+            letter-spacing: 2px;
+        }
+
+        /* Hero / Banner */
+        .hero-section {
+            background: linear-gradient(rgba(15, 56, 44, 0.75), rgba(15, 56, 44, 0.75)), 
+                        url('https://images.unsplash.com/photo-1578985545062-69928b1d9587?auto=format&fit=crop&w=1600&q=80') center/cover;
+            padding: 140px 0;
+            color: #FAF6F0;
+        }
+        .btn-gold {
+            background-color: var(--gold-accent);
+            color: var(--emerald);
+            font-weight: 600;
+            padding: 12px 32px;
+            border-radius: 30px;
+            border: none;
+            transition: all 0.3s;
+        }
+        .btn-gold:hover {
+            background-color: #d8b268;
+            color: var(--emerald);
+            transform: translateY(-2px);
+        }
+
+        /* Sections Styling */
+        .about-section {
+            padding: 90px 0;
+            background-color: var(--cream-bg);
+        }
+
+        .category-section {
+            padding: 80px 0;
+        }
+
+        .category-section:nth-child(even) {
+            background-color: var(--cream-card);
+        }
+
+        .category-section:nth-child(odd) {
+            background-color: var(--cream-bg);
+        }
+
+        .menu-category-title {
+            color: var(--brown-dark);
+            border-bottom: 2px solid var(--gold-accent);
+            padding-bottom: 8px;
+            margin-bottom: 24px;
+        }
+
+        /* Product & Gallery Cards */
+        .product-card {
+            border: none;
+            border-radius: 12px;
+            overflow: hidden;
+            background: #FFFFFF;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+            transition: transform 0.3s;
+            height: 100%;
+        }
+        .product-card:hover {
+            transform: translateY(-5px);
+        }
+        .product-card img {
+            height: 220px;
+            object-fit: cover;
+        }
+
+        /* FAQ Styling */
+        .faq-section {
+            padding: 90px 0;
+            background-color: var(--cream-card);
+        }
+        .accordion-item {
+            border: none;
+            margin-bottom: 15px;
+            border-radius: 8px !important;
+            overflow: hidden;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+        }
+        .accordion-button {
+            background-color: #FFFFFF;
+            color: var(--emerald);
+            font-weight: 600;
+        }
+        .accordion-button:not(.collapsed) {
+            background-color: var(--emerald);
+            color: #FAF6F0;
+        }
+
+        /* Testimonials */
+        .testimonial-card {
+            background: #FFFFFF;
+            border-radius: 12px;
+            padding: 30px;
+            border: 1px solid rgba(139, 90, 43, 0.15);
+            box-shadow: 0 4px 12px rgba(0,0,0,0.03);
+            height: 100%;
+        }
+
+        /* Contact & Footer */
+        .contact-box {
+            background-color: var(--emerald);
+            color: #FAF6F0;
+            border-radius: 16px;
+            padding: 50px;
+        }
+        .footer-section {
+            background-color: var(--brown-dark);
+            color: #FAF6F0;
+            padding: 60px 0 20px;
+        }
+        .footer-section a {
+            color: #E2D4C9;
+            text-decoration: none;
+        }
+        .footer-section a:hover {
+            color: var(--gold-accent);
+        }
+    </style>
+</head>
+<body>
+
+    <!-- 1. NAVBAR -->
+    <nav class="navbar navbar-expand-lg navbar-custom sticky-top">
+        <div class="container">
+            <a class="navbar-brand brand-logo" href="#">
+                <i class="bi bi-flower1 text-warning me-1"></i> HALWA <span style="font-size: 0.8rem;" class="fw-normal d-block d-sm-inline">DESSERTS</span>
+            </a>
+            <button class="navbar-toggler navbar-dark" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item"><a class="nav-link active" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">Our Story</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#cakes">Cakes</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#baklava">Baklava</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#cookies">Cookies</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#gallery">Gallery</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#faq">FAQ</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+                <div class="d-flex gap-3 text-light">
+                    <a href="#" class="text-light"><i class="bi bi-bag fs-5"></i></a>
+                    <a href="#" class="text-light"><i class="bi bi-person fs-5"></i></a>
+                    <a href="#" class="text-light"><i class="bi bi-search fs-5"></i></a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 2. BANNER / HERO -->
+    <section id="home" class="hero-section text-center">
+        <div class="container">
+            <p class="text-uppercase tracking-widest text-warning mb-2">HALWA CAKE</p>
+            <h1 class="display-3 fw-bold mb-3">AN EXOTIC SWEETNESS TO REMEMBER</h1>
+            <p class="lead mb-4 mx-auto" style="max-width: 650px;">Nikmati kelezatan kue, baklava, dan cookies renyah khas Timur Tengah pilihan terbaik Anda.</p>
+            <a href="#cakes" class="btn btn-gold text-uppercase">Shop Now</a>
+        </div>
+    </section>
+
+    <!-- 3. ABOUT US -->
+    <section id="about" class="about-section text-center">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <i class="bi bi-flower2 text-success fs-3 mb-2"></i>
+                    <h2 class="fw-bold mb-4" style="color: var(--emerald);">ABOUT US</h2>
+                    <p class="fs-5 mb-4" style="color: var(--brown-dark);">We are passionate about bringing exotic sweetness to life.</p>
+                    <p class="text-muted lh-lg mb-4">
+                        Inspired by the rich traditions of Middle Eastern and globally loved pastries, we curate a collection of unique, hand-crafted desserts. Each piece is a journey into flavor, from our delicate honey-infused pastries to our rich, textured cookies.
+                    </p>
+                    <p class="font-serif fst-italic text-uppercase tracking-wide" style="color: var(--gold-accent);">
+                        An Exotic Sweetness to Remember
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION: CAKES -->
+    <section id="cakes" class="category-section">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="fw-bold" style="color: var(--emerald);">HALWA CAKES & SPONGES</h2>
+                <p class="text-muted">Lembut, aromatik, dan kaya rasa khas Timur Tengah</p>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="card product-card">
+                        <img src="https://images.unsplash.com/photo-1535141192574-5d4897c13136?auto=format&fit=crop&w=600&q=80" class="card-img-top" alt="Halwa Cake">
+                        <div class="card-body">
+                            <h5 class="card-title font-serif" style="color: var(--brown-dark);">Halwa Cake</h5>
+                            <p class="text-muted small">Signature cake dengan rasa manis eksotis yang lembut di setiap gigitan.</p>
+                            <div class="d-flex justify-content-between align-items-center mt-3">
+                                <span class="fw-bold text-success">$28 (Whole) / $5 (Slice)</span>
+                                <button class="btn btn-sm btn-outline-success">Pesan</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card product-card">
+                        <img src="https://images.unsplash.com/photo-1565958011703-44f9829ba187?auto=format&fit=crop&w=600&q=80" class="card-img-top" alt="Saffron & Pistachio Sponge">
+                        <div class="card-body">
+                            <h5 class="card-title font-serif" style="color: var(--brown-dark);">Saffron & Pistachio Sponge</h5>
+                            <p class="text-muted small">Sponge cake beraroma saffron asli bertabur renyahnya kacang pistachio.</p>
+                            <div class="d-flex justify-content-between align-items-center mt-3">
+                                <span class="fw-bold text-success">$25 (Whole)</span>
+                                <button class="btn btn-sm btn-outline-success">Pesan</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card product-card">
+                        <img src="https://images.unsplash.com/photo-1586985289688-ca3cf47d3e6e?auto=format&fit=crop&w=600&q=80" class="card-img-top" alt="Cardamom Rose Loaf">
+                        <div class="card-body">
+                            <h5 class="card-title font-serif" style="color: var(--brown-dark);">Cardamom Rose Loaf</h5>
+                            <p class="text-muted small">Loaf cake dengan sentuhan kapulaga dan aroma air mawar yang menenangkan.</p>
+                            <div class="d-flex justify-content-between align-items-center mt-3">
+                                <span class="fw-bold text-success">$12</span>
+                                <button class="btn btn-sm btn-outline-success">Pesan</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION: BAKLAVA -->
+    <section id="baklava" class="category-section">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="fw-bold" style="color: var(--emerald);">SWEET BITES & BAKLAVA</h2>
+                <p class="text-muted">Layer pastry berlapis renyah disiram madu murni</p>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="card product-card">
+                        <img src="https://images.unsplash.com/photo-1519869325930-281384150729?auto=format&fit=crop&w=600&q=80" class="card-img-top" alt="Classic Baklava">
+                        <div class="card-body">
+                            <h5 class="card-title font-serif" style="color: var(--brown-dark);">Classic Baklava Assortment</h5>
+                            <p class="text-muted small">Kombinasi baklava klasik berlapis kacang walnuts dan sirup madu masam manis.</p>
+                            <div class="d-flex justify-content-between align-items-center mt-3">
+                                <span class="fw-bold text-success">$18 (Dozen) / $1.50 (Each)</span>
+                                <button class="btn btn-sm btn-outline-success">Pesan</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card product-card">
+                        <img src="https://images.unsplash.com/photo-1599785209707-a456fc1337cc?auto=format&fit=crop&w=600&q=80" class="card-img-top" alt="Honey Pistachio Baklava">
+                        <div class="card-body">
+                            <h5 class="card-title font-serif" style="color: var(--brown-dark);">Honey & Pistachio Fingers</h5>
+                            <p class="text-muted small">Baklava bentuk gulung panjang yang mudah dinikmati berisikan adonan pistachio cair.</p>
+                            <div class="d-flex justify-content-between align-items-center mt-3">
+                                <span class="fw-bold text-success">$19 (Dozen)</span>
+                                <button class="btn btn-sm btn-outline-success">Pesan</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card product-card">
+                        <img src="https://images.unsplash.com/photo-1509440159596-0249088772ff?auto=format&fit=crop&w=600&q=80" class="card-img-top" alt="Basbousa Cubes">
+                        <div class="card-body">
+                            <h5 class="card-title font-serif" style="color: var(--brown-dark);">Traditional Basbousa Cubes</h5>
+                            <p class="text-muted small">Kue semolina khas Arab yang lembut disiram sirup aroma bunga kelapa.</p>
+                            <div class="d-flex justify-content-between align-items-center mt-3">
+                                <span class="fw-bold text-success">$16 (Dozen)</span>
+                                <button class="btn btn-sm btn-outline-success">Pesan</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION: COOKIES -->
+    <section id="cookies" class="category-section">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="fw-bold" style="color: var(--emerald);">GOURMET COOKIES & BISCUITS</h2>
+                <p class="text-muted">Kue kering bertekstur lembut dan beraroma rempah pilihan</p>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="card product-card">
+                        <img src="https://images.unsplash.com/photo-1558961363-fa8fdf82db35?auto=format&fit=crop&w=600&q=80" class="card-img-top" alt="Shortbread Rings">
+                        <div class="card-body">
+                            <h5 class="card-title font-serif" style="color: var(--brown-dark);">Shortbread Rings</h5>
+                            <p class="text-muted small">Kue mentega mentega renyah dengan isian selai buah manis di tengahnya.</p>
+                            <div class="d-flex justify-content-between align-items-center mt-3">
+                                <span class="fw-bold text-success">$14 (Tin of 18)</span>
+                                <button class="btn btn-sm btn-outline-success">Pesan</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card product-card">
+                        <img src="https://images.unsplash.com/photo-1590080875515-8a3a8dc5735e?auto=format&fit=crop&w=600&q=80" class="card-img-top" alt="Date Filled Cookies">
+                        <div class="card-body">
+                            <h5 class="card-title font-serif" style="color: var(--brown-dark);">Date-Filled Cookies</h5>
+                            <p class="text-muted small">Cookies autentik berisi pasta kurma manis alami (Ma'amoul style).</p>
+                            <div class="d-flex justify-content-between align-items-center mt-3">
+                                <span class="fw-bold text-success">$15 (Tin of 12)</span>
+                                <button class="btn btn-sm btn-outline-success">Pesan</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card product-card">
+                        <img src="https://images.unsplash.com/photo-1607958996333-41aef7caefaa?auto=format&fit=crop&w=600&q=80" class="card-img-top" alt="Ginger Spice Cookies">
+                        <div class="card-body">
+                            <h5 class="card-title font-serif" style="color: var(--brown-dark);">Ginger & Spice Cookies</h5>
+                            <p class="text-muted small">Kue kering jahe hangat gabungan rempah manis hangat yang mengunggah selera.</p>
+                            <div class="d-flex justify-content-between align-items-center mt-3">
+                                <span class="fw-bold text-success">$12 (Tin of 15)</span>
+                                <button class="btn btn-sm btn-outline-success">Pesan</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 5. GALLERY -->
+    <section id="gallery" class="py-5" style="background-color: var(--cream-bg);">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="fw-bold" style="color: var(--emerald);">GALERI MANISAN KAMI</h2>
+                <p class="text-muted">An Exotic Sweetness to Remember</p>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="card product-card">
+                        <img src="https://images.unsplash.com/photo-1535141192574-5d4897c13136?auto=format&fit=crop&w=600&q=80" class="card-img-top" alt="Halwa Cakes">
+                        <div class="card-body text-center bg-white">
+                            <h5 class="card-title font-serif" style="color: var(--brown-dark);">Halwa Cakes & Sponges</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card product-card">
+                        <img src="https://images.unsplash.com/photo-1519869325930-281384150729?auto=format&fit=crop&w=600&q=80" class="card-img-top" alt="Baklava">
+                        <div class="card-body text-center bg-white">
+                            <h5 class="card-title font-serif" style="color: var(--brown-dark);">Sweet Bites & Pastries</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card product-card">
+                        <img src="https://images.unsplash.com/photo-1558961363-fa8fdf82db35?auto=format&fit=crop&w=600&q=80" class="card-img-top" alt="Cookies">
+                        <div class="card-body text-center bg-white">
+                            <h5 class="card-title font-serif" style="color: var(--brown-dark);">Gourmet Cookies & Biscuits</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 6. FAQ -->
+    <section id="faq" class="faq-section">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="fw-bold" style="color: var(--emerald);">FREQUENTLY ASKED QUESTIONS</h2>
+                <p class="text-muted">An Exotic Sweetness to Remember</p>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="accordion" id="faqAccordion">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faq1">
+                                    Are your desserts nut-free?
+                                </button>
+                            </h2>
+                            <div id="faq1" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body text-muted">
+                                    While some products do not contain nuts as an ingredient, our kitchen processes nuts, and we cannot guarantee 100% nut-free products.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq2">
+                                    Do you offer vegan or gluten-free options?
+                                </button>
+                            </h2>
+                            <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body text-muted">
+                                    At this time, our core menu contains dairy, egg, and wheat. Please ask about custom orders for special dietary needs.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq3">
+                                    How should I store the Halwa Cakes?
+                                </button>
+                            </h2>
+                            <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body text-muted">
+                                    Our sponges are best stored at room temperature for up to 3 days or in the refrigerator for up to 5 days, tightly covered.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 7. TESTIMONI -->
+    <section class="py-5" style="background-color: var(--cream-bg);">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="fw-bold" style="color: var(--emerald);">TESTIMONI DARI PELANGGAN KAMI</h2>
+                <p class="text-muted">An Exotic Sweetness to Remember</p>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="testimonial-card">
+                        <div class="text-warning mb-2">★★★★★</div>
+                        <p class="mb-3 text-muted">"Halwa Desserts adalah penemuan terbaik tahun ini! Baklavanya luar biasa, begitu renyah dan penuh rasa. Halwa Cakenya juga lembut."</p>
+                        <h6 class="fw-bold mb-0" style="color: var(--brown-dark);">Siti Nuraini</h6>
+                        <small class="text-muted">Jakarta | September 2024</small>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="testimonial-card">
+                        <div class="text-warning mb-2">★★★★★</div>
+                        <p class="mb-3 text-muted">"Saya memesan aneka kue kering untuk acara keluarga, dan semua orang menyukainya! Kualitas bahannya terasa sekali. Pasti akan memesan lagi!"</p>
+                        <h6 class="fw-bold mb-0" style="color: var(--brown-dark);">M. Rizki</h6>
+                        <small class="text-muted">Surabaya | Agustus 2024</small>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="testimonial-card">
+                        <div class="text-warning mb-2">★★★★★</div>
+                        <p class="mb-3 text-muted">"Halwa Cake pandan dan kelapa benar-benar membawa nostalgia. Sangat otentik, persis seperti yang saya ingat dari masa kecil."</p>
+                        <h6 class="fw-bold mb-0" style="color: var(--brown-dark);">Dewi Sartika</h6>
+                        <small class="text-muted">Bandung | Oktober 2024</small>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 8. CONTACT -->
+    <section id="contact" class="py-5" style="background-color: var(--cream-card);">
+        <div class="container">
+            <div class="contact-box shadow-lg text-center">
+                <h2 class="fw-bold mb-2">HALWA DESSERTS</h2>
+                <p class="text-uppercase tracking-wide mb-4" style="color: var(--gold-accent);">An Exotic Sweetness to Remember</p>
+                <hr class="w-25 mx-auto border-light mb-4">
+                <div class="row g-4 justify-content-center">
+                    <div class="col-md-3">
+                        <i class="bi bi-globe fs-3 mb-2 d-block"></i>
+                        <span>www.halwadesserts.com</span>
+                    </div>
+                    <div class="col-md-3">
+                        <i class="bi bi-telephone fs-3 mb-2 d-block"></i>
+                        <span>+1 555-HALWA</span>
+                    </div>
+                    <div class="col-md-3">
+                        <i class="bi bi-instagram fs-3 mb-2 d-block"></i>
+                        <span>@halwadesserts</span>
+                    </div>
+                    <div class="col-md-3">
+                        <i class="bi bi-envelope fs-3 mb-2 d-block"></i>
+                        <span>hello@halwadesserts.com</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 9. FOOTER -->
+    <footer class="footer-section">
+        <div class="container">
+            <div class="row g-4 mb-4">
+                <div class="col-md-4">
+                    <h5 class="font-serif mb-3" style="color: var(--gold-accent);">About Us</h5>
+                    <p class="small text-light-50">Handcrafted desserts with unique exotic flavors. Visit our store to experience the difference.</p>
+                </div>
+                <div class="col-md-4">
+                    <h5 class="font-serif mb-3" style="color: var(--gold-accent);">Contact & Store Info</h5>
+                    <p class="small mb-1">123 Bakery Lane, Sweet Town, SW1 2ET</p>
+                    <p class="small">+44 20 1234 5678</p>
+                </div>
+                <div class="col-md-4">
+                    <h5 class="font-serif mb-3" style="color: var(--gold-accent);">Quick Links</h5>
+                    <ul class="list-unstyled small">
+                        <li><a href="#faq">FAQ</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms & Conditions</a></li>
+                        <li><a href="#">Sitemap</a></li>
+                    </ul>
+                </div>
+            </div>
+            <hr class="border-secondary">
+            <div class="d-flex justify-content-between align-items-center flex-wrap small text-light-50 pt-2">
+                <div>www.halwadesserts.com | @halwadesserts</div>
+                <div>Halwa Cake © 2025</div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap 5 JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/bootstrap.bundle.min.js"></script>
+</body>
+</html>
